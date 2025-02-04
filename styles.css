@@ -62,10 +62,19 @@ header {
     color: #fff !important; /* Force white text */
 }
 
+/* Updated styles for resume and face images */
 .pdf-preview img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5px;
+    display: block; /* Remove extra space below the image */
+    margin: 0 auto; /* Center the image */
+}
+
+/* Set a maximum width for the resume and face images */
+.pdf-preview {
+    max-width: 600px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
 }
 
 .resume-button {
